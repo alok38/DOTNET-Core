@@ -1,0 +1,14 @@
+﻿@using StudentMVCCore.Repository
+@using StudentMVCCore.Models
+@model StudentMVCCore.Models.Student
+@{
+    ViewBag.Title = "Update Student";
+} <html>     <h2> Update Students Using Id</h2><div>     <table>         @using(Html.BeginForm("UpdateStudentById", "Student", FormMethod.Post)) 
+        {
+           @Html.Label("Student ID")
+           @Html.TextBox("Id")<br />
+            @Html.Label("Student Name")
+            @Html.TextBox("StudentName")<br />              @Html.Label("Subject")
+            @Html.TextBox("subject")<br />              @Html.Label("Marks")
+          @Html.TextBox("marks")<br />             <input value="Update" type="submit">
+        }      </table></div> </html>

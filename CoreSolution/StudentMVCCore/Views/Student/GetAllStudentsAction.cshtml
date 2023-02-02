@@ -1,0 +1,7 @@
+﻿@using StudentMVCCore.Repository
+@model IEnumerable<Student>
+@{
+    ViewBag.Title = "GetAllStudents";
+} <html><a href="/Student/InsertStudentAction">InsertStudent</a><br/><a href="/Student/DeleteStudent">Delete Student</a><br/><a href="/Student/UpdateStudent">Update Student</a><h2>Getting All Students</h2> <div><table><tr><th>Student Id</th><th>Student Name</th><th>Student Subject</th><th>Student Marks</th></tr>         @foreach (Student stud in Model)
+        {<tr><td>@stud.StudentId</td><td>@stud.StudentName</td><td>@stud.subject</td><td>@stud.Marks</td></tr>
+        }     </table> </div> </html>

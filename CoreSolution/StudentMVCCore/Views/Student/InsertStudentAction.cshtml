@@ -1,0 +1,9 @@
+﻿@using StudentMVCCore.Repository
+@using StudentMVCCore.Models
+@model StudentMVCCore.Models.Student
+@{
+    ViewBag.Title = "Inserting Student";
+} <html>     <h2> Inserting Student</h2><div><table><form action="/Student/InsertStudent" method="post" >
+        Student Name: <input type="text" name="StudentName" value=""/>
+         Subject: <input type="text" name="subject" value=""/>
+          Marks: <input type="text" name="marks" value=""/>           <input type="submit" name="btnSubmit" value="Submit"/></form></table></div></html>

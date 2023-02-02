@@ -1,0 +1,25 @@
+﻿@model HelloMVC.Models.Employee
+ 
+@{
+    ViewData["Title"] = "Employee Details";
+}
+ 
+<h1>Details</h1>
+ 
+<div>
+<h4>Employee Details</h4>
+<table border="2">
+<tr>
+<th>Employee ID</th>
+<td>@Model.Id</td>
+</tr>
+<tr>
+<th>Employee Name</th>
+<td>@Model.Name</td>
+</tr>
+<tr>
+<th>Salary</th>
+<td>@Model.Salary</td>
+</tr> 
+</table>
+</div>
